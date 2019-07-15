@@ -1,3 +1,32 @@
 body {
-    
+    background: #374551;    
+    font-family: 'Staatliches', cursive;
+    color: #BAD4EB;
+}
+
+#mainNavbar {
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+#mainNavbar .nav-link{
+    color: white;
+}
+
+#mainNavbar .nav-link:hover{
+    color: #BAD4EB;
+}
+
+#mainNavbar .navbar-brand {
+    color: #BAD4EB;
+    font-size: 2rem;    
+}
+
+#section1 {
+    background: black;
+}
+
+.cursive {
+    font-family: 'Pattaya', sans-serif;
+    font-weight: 100;
 }
