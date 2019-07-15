@@ -5,8 +5,7 @@ body {
 }
 
 #mainNavbar {
-    font-size: 1rem;
-    font-weight: 100;
+    font-size: 1rem;    
 }
 
 #mainNavbar .nav-link{
@@ -22,11 +21,31 @@ body {
     font-size: 2rem;    
 }
 
-#section1 {
+#intro1 {
     background: black;
+}
+
+#intro2 h1, #intro2 h3 {
+    color: #343A40; 
+}
+
+#contact, #quote, #intro2 {
+    background: #BAD4EB;
+    color: #343A40;     
 }
 
 .cursive {
     font-family: 'Pattaya', sans-serif;
-    font-weight: 100;
+    font-size: 3rem;
+}
+
+h2 {
+    color: white;
+    font-size: 2rem;
+}
+
+footer {
+    background: #343A40;    
+    bottom: 10;
+    width: 100%;
 }
