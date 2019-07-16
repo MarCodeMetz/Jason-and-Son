@@ -2,6 +2,7 @@ body {
     background: #374551;    
     font-family: 'Staatliches', cursive;
     color: #BAD4EB;
+    font-size: 120%;
 }
 
 #mainNavbar {
@@ -32,6 +33,11 @@ body {
 #contact, #quote, #intro2 {
     background: #BAD4EB;
     color: #343A40;     
+}
+
+#services, #schedule {    
+    margin-top: 35px;
+    margin-bottom: 35px;
 }
 
 .cursive {
