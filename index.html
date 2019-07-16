@@ -86,7 +86,26 @@
                 <div class="col-10 col-lg-8">
                     <h2>Free Quote</h2>
                     <p> Please select a service from the list below to add items to your quote request, and we will send you a quote!</p>
-                
+                    <label class="col-5" for="service">select a service</label>
+                    <select class="col-5" id="service" name="service">
+                      <option value=""></option>    
+                      <option value="axle">Axle and CV Joint Repair</option>
+                      <option value="break">Brake Repair</option> 
+                      <option value="belts_hoses">Belts & Hoses</option>
+                      <option value="climate">Climate Control Systems</option>    
+                      <option value="cooling">Cooling System Repair</option>
+                      <option value="engine">Engine Repair</option>
+                      <option value="differential">Differential Repair</option>
+                      <option value="electrical">Electrical and Electronic Systems</option>
+                      <option value="lube">Lube, Oil & Filter Change</option>
+                      <option value="starting">Starting, Charging & Batteries</option>
+                      <option value="inspection">Preventive Maintenance, Inspection & Service</option>
+                      <option value="steering">Steering and Suspension System</option>
+                      <option value="glass">Glass Repair and Replace</option>      
+                    </select>
+                    <div class="getQuote">    
+                        <button id="submit" class="btn btn-danger" type="button" value="Submit">Get Quote</button>
+                    </div>
                 </div>
             </div>            
         </div>
@@ -117,7 +136,7 @@
             <form class="col" id="survey-form">
                 <div>  
                     <label class="col-5" for="firstName" id="name-label">First Name</label>
-                    <input class="col-5" type="text" id="name" placeholder="enter your name" required>
+                    <input class="col-5" type="text" id="name" placeholder="enter your first name" required>
 
                     <label class="col-5" for="lastName">Last Name</label>
                     <input class="col-5" type="text" id="lastname" placeholder="enter your last name" required>
@@ -125,20 +144,26 @@
                     <label class="col-5" for="email" id="email-label">E-Mail</label>
                     <input class="col-5" type="text" id="email" placeholder="enter your e-mail" required>
 
-                    <label class="col-5" for="location">Location</label>
-                        <select class="col-5" id="location" name="location">
-                          <option value=""></option>    
-                          <option value="africa">Africa</option>
-                          <option value="antarctica">Antarctica</option> 
-                          <option value="asia">Asia</option>
-                          <option value="australia">Australia</option>    
-                          <option value="europe">Europe</option>
-                          <option value="northAmerica">North America</option>
-                          <option value="southAmerica">South America</option>      
+                    <label class="col-5" for="service_request">Service Request</label>
+                        <select class="col-5" id="service_request" name="service_request">
+                            <option value=""></option>    
+                            <option value="axle">Axle and CV Joint Repair</option>
+                            <option value="break">Brake Repair</option> 
+                            <option value="belts_hoses">Belts & Hoses</option>
+                            <option value="climate">Climate Control Systems</option>    
+                            <option value="cooling">Cooling System Repair</option>
+                            <option value="engine">Engine Repair</option>
+                            <option value="differential">Differential Repair</option>
+                            <option value="electrical">Electrical and Electronic Systems</option>
+                            <option value="lube">Lube, Oil & Filter Change</option>
+                            <option value="starting">Starting, Charging & Batteries</option>
+                            <option value="inspection">Preventive Maintenance, Inspection & Service</option>
+                            <option value="steering">Steering and Suspension System</option>
+                            <option value="glass">Glass Repair and Replace</option>      
                         </select>
                 </div>
                 <div class="col">    
-                    <button id="submit" class="btn btn-danger col-1.5" type="button" value="Submit">Submit</button>
+                    <button id="submit" class="btn btn-danger" type="button" value="Submit">Submit</button>
                 </div>
             </form>
         </div>     
