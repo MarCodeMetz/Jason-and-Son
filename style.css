@@ -49,3 +49,8 @@ footer {
     bottom: 10;
     width: 100%;
 }
+
+.navbar.scrolled {
+    background: #BAD4EB;
+    transition: background 500ms;
+}

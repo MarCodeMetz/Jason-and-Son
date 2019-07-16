@@ -66,7 +66,7 @@
             <div class="row justify-content-center py-5">
                 <div class="col-10 col-lg-8">
                     <h2>Services</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In accusantium sed facilis mollitia ullam explicabo praesentium illo natus eius id.</p>
+                    <p>Our automotive services include battery replacement, brake repair, diesel engine repair, differential repair, custom fabrication, exhaust system repair, and much more. From state inspections and preventive maintenance to service for your brakes and transmission, you'll find that our ASE-certified technicians have a lot to offer you.</p>
                 </div>
             </div>            
         </div>
@@ -93,13 +93,13 @@
     </div>
 </section>
 
-<section id="section4" class="container-fluid px-0">
+<section id="schedule" class="container-fluid px-0">
     <div class="row align-items-center">
         <div class="col-md-6 text-center">
             <div class="row justify-content-center py-5">
                 <div class="col-10 col-lg-8">
-                    <h2>Lorem ipsum dolor</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In accusantium sed facilis mollitia ullam explicabo praesentium illo natus eius id.</p>
+                    <h2>SCHEDULE A REPAIR</h2>
+                    <p>Please use the <a href="#contact">contact</a> form below to submit a scheduled service request to us. Submitting this form does not guarantee that the time you’re choosing is available, but we will be in touch with you within 24 hours, to schedule a time that works well for you.</p>
                 </div>
             </div>            
         </div>        
@@ -111,13 +111,37 @@
 
 <section id="contact" class="container-fluid text-center p-5">
     <h2 class="cursive">Contact</h2>
+    <p>Dear customer! Feel free to let us know how we can help you!</p>
     <div class="row">        
-        <div class="col-md-6">
+        <div class="col-md-12">
+            <form class="col" id="survey-form">
+                <div>  
+                    <label class="col-5" for="firstName" id="name-label">First Name</label>
+                    <input class="col-5" type="text" id="name" placeholder="enter your name" required>
 
-        </div>
-        <div class="col-md-6">
+                    <label class="col-5" for="lastName">Last Name</label>
+                    <input class="col-5" type="text" id="lastname" placeholder="enter your last name" required>
 
-        </div>
+                    <label class="col-5" for="email" id="email-label">E-Mail</label>
+                    <input class="col-5" type="text" id="email" placeholder="enter your e-mail" required>
+
+                    <label class="col-5" for="location">Location</label>
+                        <select class="col-5" id="location" name="location">
+                          <option value=""></option>    
+                          <option value="africa">Africa</option>
+                          <option value="antarctica">Antarctica</option> 
+                          <option value="asia">Asia</option>
+                          <option value="australia">Australia</option>    
+                          <option value="europe">Europe</option>
+                          <option value="northAmerica">North America</option>
+                          <option value="southAmerica">South America</option>      
+                        </select>
+                </div>
+                <div class="col">    
+                    <button id="submit" class="btn btn-danger col-1.5" type="button" value="Submit">Submit</button>
+                </div>
+            </form>
+        </div>     
     </div>
 </section>
 
@@ -134,5 +158,14 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script>
+    $(function () {
+        $(document).scroll(function(){
+            var $nav = $("#mainNavbar");
+            $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+        });
+    });
+</script>
+
 </body>
 </html>
